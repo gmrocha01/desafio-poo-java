@@ -2,6 +2,7 @@ package ListaOrdenada;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class ExemploOrdenacaoList {
@@ -32,7 +33,9 @@ public class ExemploOrdenacaoList {
         System.out.println("----- Ordem Nome/Cor/Idade -----");
         meusGatos.sort(new ComparatorNomeCorIdade());
         System.out.println(meusGatos);
-
+        System.out.println("\nComparando os gatos por cor: ");
+        meusGatos.sort(Comparator.comparing(Gato::getCor)); //Reference Method
+        System.out.println(meusGatos.toString());
 
     }
 }
