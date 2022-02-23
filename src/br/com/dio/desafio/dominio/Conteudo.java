@@ -1,7 +1,7 @@
 package br.com.dio.desafio.dominio;
 
-public abstract class Conteudo {
-    protected static final double XP_Padrao = 10;
+public abstract class Conteudo { //Se a classe é abstrata, não pode ser instanciada.
+    protected static final double XP_Padrao = 10; //final significa q é constant
     private String titulo, descricao;
 
     public String getTitulo() {
